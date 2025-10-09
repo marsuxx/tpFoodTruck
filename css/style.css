@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+header h1.site-title {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.contenu, .admin-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-table th {
+    background: #4CAF50;
+    color: white;
+}
+
+.status.en_attente { color: orange; }
+.status.valide { color: green; }
+.status.refuse { color: red; }
+
+.actions a.btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.actions a.validate { 
+    background: #4CAF50; 
+    color: white; 
+}
+.actions a.refuse { 
+    background: #f44336; 
+    color: white; 
+}
+
+.btn-submit {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #45a049;
+}
+
+.extra-fields { 
+    display: none; margin-top: 10px; 
+}
+
+.vendeur-container, .client-container {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alerte {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.form-vendeur {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+}
+
+.form-vendeur input, .form-vendeur button {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.table-vendeur {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.table-vendeur th, .table-vendeur td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-vendeur th {
+    background-color: #f2f2f2;
+}
+
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
