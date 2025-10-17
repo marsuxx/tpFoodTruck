@@ -1,2 +1,0 @@
-# tpFoodTruck
-amelia/ilhan
