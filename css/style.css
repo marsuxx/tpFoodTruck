@@ -1,0 +1,320 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    justify-content: center;
+}
+
+header {
+    background: #8a0b20; 
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1.site-title {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4c5c5;
+}
+
+.contenu, .admin-container, .vendeur-container, .client-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+center-text{
+
+}
+
+h2.page-title, h2, h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #b71c1c;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 0.95rem;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.admin-table th {
+    background: #c62828;
+    color: white;
+}
+
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+.status.en_attente {
+    color: #ff7043; 
+}
+.status.valide { 
+    color: #359c2c; 
+}
+.status.refuse { 
+    color: #b71c1c; 
+}
+
+.actions a.btn, .btn-submit, button {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.vendeur-container {
+    border-top: 5px solid #c62828;
+}
+
+.vendeur-container h2, 
+.vendeur-container h3 {
+    color: #b71c1c;
+}
+
+.table-vendeur {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 0.95rem;
+}
+
+.table-vendeur th, .table-vendeur td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.table-vendeur th {
+    background: #c62828;
+    color: white;
+}
+
+.actions a.validate,
+.vendeur-container .btn-submit, 
+.vendeur-container button {
+    background: #996210;
+    color: white;
+}
+
+.actions a.validate, .vendeur-container .btn-submit, .vendeur-container button {
+    background: #109922;
+    color: white;
+}
+
+.actions a.refuse, .vendeur-container .btn-submit, .vendeur-container button {
+    background: #991010;
+    color: white;
+}
+
+td.actions{
+    color:#109922;
+}
+
+.vendeur-container .actions a.btn:hover,
+.vendeur-container .btn-submit:hover,
+.vendeur-container button:hover {
+    background: #b71c1c;
+}
+
+
+.vendeur-container .form-vendeur input,
+.vendeur-container .form-vendeur select,
+.vendeur-container .form-vendeur textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.vendeur-container .form-vendeur input:focus,
+.vendeur-container .form-vendeur select:focus,
+.vendeur-container .form-vendeur textarea:focus {
+    outline: none;
+    border-color: #e53935;
+    box-shadow: 0 0 5px rgba(229, 57, 53, 0.3);
+}
+
+.vendeur-container .form-vendeur button {
+    background-color: #e53935;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s;
+    cursor: pointer;
+}
+
+.vendeur-container .form-vendeur button:hover {
+    background-color: #b71c1c;
+    transform: scale(1.02);
+}
+
+
+.client-container {
+    border-top: 5px solid #c62828;
+}
+
+.client-container h2, 
+.client-container h3 {
+    color: #c62828;
+}
+
+.client-container .btn-submit, 
+.client-container button {
+    background: #c62828;
+    color: #700000;
+}
+
+.client-container .btn-submit:hover,
+.client-container button:hover {
+    background: #c62828;
+    color: white;
+}
+
+.client-container .status.en_attente { color: #ff7043; }
+.client-container .status.valide { color: #359c2c; }
+.client-container .status.refuse { color: #b71c1c; }
+
+.client-container .form-vendeur input,
+.client-container .form-vendeur select,
+.client-container .form-vendeur textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.client-container .form-vendeur input:focus,
+.client-container .form-vendeur select:focus,
+.client-container .form-vendeur textarea:focus {
+    outline: none;
+    border-color: #c62828;
+    box-shadow: 0 0 5px rgba(239, 154, 154, 0.3);
+}
+
+.client-container .form-vendeur button {
+    background-color: #c62828;
+    color: #700000;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s;
+    cursor: pointer;
+}
+
+.client-container .form-vendeur button:hover {
+    background-color: #c62828;
+    color: white;
+    transform: scale(1.02);
+}
+
+.alerte {
+    text-align: center;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #c62828; /* Rouge principal */
+    box-shadow: 0 0 5px rgba(198, 40, 40, 0.3);
+}
+
+form button,
+form .btn-submit {
+    align-self: center;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+form button:hover,
+form .btn-submit:hover {
+    background-color: #8a0b20;
+    transform: scale(1.03);
+}
+
+.accueil-img {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
